@@ -907,4 +907,147 @@ select {
   }
   /* #endregion  DASHBAORD*/
 }
+.contact__page {
+  padding: 4rem 0;
+  text-align: center;
+  background: var(--color-gray-900);
+}
+
+.contact__page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact__page p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--color-gray-900);
+}
+
+.contact__form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--color-primary-variant);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form .form__group {
+  margin-bottom: 1.5rem;
+}
+
+.contact__form .form__group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact__form .form__group input,
+.contact__form .form__group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact__form .form__group input:focus,
+.contact__form .form__group textarea:focus {
+  border-color: var(--color-gray-900);
+  outline: none;
+}
+
+.contact__form button.btn {
+  display: block; 
+  margin: 1.5rem auto 0; 
+  background: var(--color-gray-900);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact__form button.btn:hover {
+  background: gray;
+}
+
+
+.contact__form button.btn:hover {
+  background: var(--color-primary-variant);
+}
+
+.contact__details {
+  margin-top: 3rem;
+}
+
+.contact__details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact__details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact__details ul li {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+}
+/* Notification Container */
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4caf50;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+.notification.hidden {
+  display: none;
+}
+
+.notification__content i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: #fff;
+}
+
+.notification__content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.notification .btn-close {
+  background: #f44336;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.notification .btn-close:hover {
+  background: #d32f2f;
+}
+
 /* #endregion  MEDIA QUERIES (Small-Sized Devices) */

@@ -42,3 +42,34 @@ if (window.innerWidth <= 600)
   } catch (error) {
     //   console.error("Error occurred in sidebar functionality:", error);
   }
+const contactForm = document.getElementById('contactForm');
+const notification = document.getElementById('notification');
+const notificationMessage = document.getElementById('notificationMessage');
+const closeNotification = document.getElementById('closeNotification');
+
+// Tambahkan event listener untuk form submission
+contactForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Cegah form dari pengiriman default
+
+    // Ambil data dari form
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    // Set pesan notifikasi
+    notificationMessage.innerHTML = `
+        Terima kasih, <strong>${name}</strong>! Pesan Anda telah terkirim.<br>
+        Kami akan segera menghubungi Anda di email: <strong>${email}</strong>.
+    `;
+
+    // Tampilkan notifikasi
+    notification.classList.remove('hidden');
+    notification.style.display = 'block';
+
+    // Bersihkan form
+    contactForm.reset();
+});
+
+// Tambahkan event listener untuk tombol "Close"
+closeNotification.addEventListener('click', function () {
+    notification.style.display = 'none';
+});

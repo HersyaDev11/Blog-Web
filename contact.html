@@ -39,9 +39,35 @@
     </nav>
     <!-- ======================== END OF NAV ======================== -->
 
-<section class="empty__page">
-    <h1>Contact Page</h1>
-</section>
+ <section class="contact__page">
+        <div class="container contact__container">
+            <h1>Contact Us</h1>
+            <div class="contact__form-container">
+                <form id="contactForm" action="" method="POST" class="contact__form">
+                    <div class="form__group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda..." required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Masukkan E-mail Anda..." required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Masukkan Pesan..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="notification" class="notification hidden">
+                    <div class="notification__content">
+                        <i class="uil uil-check-circle"></i>
+                        <p id="notificationMessage"></p>
+                        <button id="closeNotification" class="btn btn-close">Close</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
 
 <footer>
     <div class="footer__socials">

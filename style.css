@@ -1167,5 +1167,29 @@ select {
       font-size: 0.9rem;
   }
 }
+/* Hover efek untuk gambar */
+.thumbnail_image:hover {
+  transform: scale(1.1); /* Perbesar gambar saat hover */
+}
+
+/* Hover efek untuk judul */
+.title_link:hover {
+  color: #007BFF; /* Ubah warna teks saat hover */
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Efek shadow container */
+.featured_container {
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.featured_container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+}
+
 
 /* #endregion  MEDIA QUERIES (Small-Sized Devices) */
